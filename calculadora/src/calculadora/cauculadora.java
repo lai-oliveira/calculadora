@@ -2,7 +2,7 @@ package calculadora;
 
 import java.util.Scanner;
 
-public class cauculadora {
+public class calculadora {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class cauculadora {
 			int cliques = 0;
 
 			if (compartilha == 0) {
-				// primeira vez que entrou no loop,incializando visualização.
+				// primeira vez que entrou no loop,incializando visualizaÃ§Ã£o.
 
 				visualizacaoOriginal = (int) Math.round(valor * 30);
 
@@ -56,17 +56,17 @@ public class cauculadora {
 
 		totalAnuncio = totalVisualizacao + visualizacaoOriginal;
 
-		System.out.println("Visualizações anuncio compartilhado  : " + totalVisualizacao);
-		System.out.println("Visualizações de anuncio original: " + visualizacaoOriginal);
-		System.out.println("Projeção aproximada de total de visualizações do anuncio : " + totalAnuncio);
+		System.out.println("VisualizaÃ§Ãµes anuncio compartilhado  : " + totalVisualizacao);
+		System.out.println("VisualizaÃ§Ãµes de anuncio original: " + visualizacaoOriginal);
+		System.out.println("ProjeÃ§Ã£o aproximada de total de visualizaÃ§Ãµes do anuncio : " + totalAnuncio);
 
 	}
 
 	/**
-	 * Metodo que obtem quantidades de cliques atraves de visualizaçoes
+	 * Metodo que obtem quantidades de cliques atraves de visualizaÃ§oes
 	 * 
 	 * @param visualizacoes
-	 * @return quantidades de cliques de acordo com visualizaçoes
+	 * @return quantidades de cliques de acordo com visualizaÃ§oes
 	 */
 	private static int obterCliques(int visualizacoes) {
 		return (int) Math.round(visualizacoes * 0.12);
